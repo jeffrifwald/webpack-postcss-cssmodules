@@ -32,6 +32,10 @@ module.exports = {
     path: path.join(__dirname, "build")
   },
   postcss: function postcss() {
-    return [simpleVars, autoprefixer];
+    return [simpleVars({
+      variables: function variables() {
+        return require("./src/styles/variables");
+      }
+    }), autoprefixer];
   }
 };
