@@ -54,7 +54,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactDom = __webpack_require__(7);
+	var _reactDom = __webpack_require__(8);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -132,7 +132,7 @@
 	var content = __webpack_require__(4);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(6)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -154,15 +154,15 @@
 
 	exports = module.exports = __webpack_require__(5)();
 	// imports
-
+	exports.i(__webpack_require__(6), undefined);
 
 	// module
-	exports.push([module.id, "._17vJDFK7m6Rj24_TQ24JJs {\n    background: -webkit-linear-gradient(red, yellow);\n    background: linear-gradient(red, yellow);\n    color: blue;\n}\n\n.HDxCAnqWKmew6JR73zg1Z {\n    color: white\n}", ""]);
+	exports.push([module.id, "._17vJDFK7m6Rj24_TQ24JJs {\n    background: -webkit-linear-gradient(red, yellow);\n    background: linear-gradient(red, yellow);\n    color: blue;\n}\n\n.HDxCAnqWKmew6JR73zg1Z {\n    color: white\n}\n", ""]);
 
 	// exports
 	exports.locals = {
-		"message": "_17vJDFK7m6Rj24_TQ24JJs",
-		"specialMessage": "HDxCAnqWKmew6JR73zg1Z _17vJDFK7m6Rj24_TQ24JJs"
+		"message": "_17vJDFK7m6Rj24_TQ24JJs " + __webpack_require__(6).locals["baseComponent"] + "",
+		"specialMessage": "HDxCAnqWKmew6JR73zg1Z _17vJDFK7m6Rj24_TQ24JJs " + __webpack_require__(6).locals["baseComponent"] + ""
 	};
 
 /***/ },
@@ -223,6 +223,22 @@
 
 /***/ },
 /* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(5)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".FZTFNXh8MV7jxqzRKYKV2 {\n    font-size: 35px;\n}\n", ""]);
+
+	// exports
+	exports.locals = {
+		"baseComponent": "FZTFNXh8MV7jxqzRKYKV2"
+	};
+
+/***/ },
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -474,7 +490,7 @@
 
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports) {
 
 	module.exports = ReactDOM;

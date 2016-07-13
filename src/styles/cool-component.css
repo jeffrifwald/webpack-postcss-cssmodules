@@ -4,6 +4,7 @@ $color-white: white;
 $color-yellow: yellow;
 
 .message {
+    composes: baseComponent from "./base.css";
     background: linear-gradient($color-red, $color-yellow);
     color: $color-blue;
 }
