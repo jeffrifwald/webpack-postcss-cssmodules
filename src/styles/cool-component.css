@@ -1,0 +1,14 @@
+$color-blue: blue;
+$color-red: red;
+$color-white: white;
+$color-yellow: yellow;
+
+.message {
+    background: linear-gradient($color-red, $color-yellow);
+    color: $color-blue;
+}
+
+.specialMessage {
+    composes: message;
+    color: $color-white
+}

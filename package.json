@@ -1,0 +1,31 @@
+{
+  "name": "postcss-webpack-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "builder run check"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "builder": "^2.10.1",
+    "builder-react-component": "^0.3.3",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "builder-react-component-dev": "^0.3.3",
+    "css-loader": "^0.23.1",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^0.9.1",
+    "postcss-modules": "^0.5.0",
+    "postcss-simple-vars": "^3.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}
