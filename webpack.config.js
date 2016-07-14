@@ -1,6 +1,7 @@
 "use strict";
 
 var autoprefixer = require("autoprefixer");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var modules = require("postcss-modules");
 var simpleVars = require("postcss-simple-vars");
 var path = require("path");
@@ -20,7 +21,7 @@ module.exports = {
       loader: "babel-loader",
       test: /\.js$/
     }, {
-      loader: "style-loader!css-loader?modules!postcss-loader",
+      loader: ExtractTextPlugin.extract("style-loader", ["css-loader?modules", "postcss-loader"]),
       test: /\.css$/
     }, {
       loader: "json",
@@ -31,6 +32,9 @@ module.exports = {
     filename: "[name].js",
     path: path.join(__dirname, "build")
   },
+  plugins: [
+    new ExtractTextPlugin("index.css")
+  ],
   postcss: function postcss() {
     return [simpleVars({
       variables: function variables() {
